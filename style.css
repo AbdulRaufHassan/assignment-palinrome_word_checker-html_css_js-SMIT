@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('https://t3.ftcdn.net/jpg/01/02/48/36/360_F_102483600_JGhPmhrAfzEeWIib532EtIqAcvRCYaMi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#mainDiv {
+    height: auto;
+    max-width: 430px;
+    min-width: 300px;
+    margin: 0 20px;
+    background-color: #091931;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: rgba(238, 233, 233, 0.35) 0px 5px 15px;
+}
+
+h1 {
+    letter-spacing: 2px;
+    margin: 0;
+    color: white;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 28px;
+}
+
+p {
+    font-family: 'Playpen Sans', cursive, sans-serif;
+    color: rgb(176, 167, 167);
+}
+
+#input {
+    border: 1px solid grey;
+    background-color: white;
+    height: 55px;
+    width: 100%;
+    border-radius: 7px;
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#input:focus {
+    border: 3px solid grey;
+    outline: none;
+}
+
+#butn {
+    border: none;
+    height: 55px;
+    width: 100%;
+    background-color: rgba(242, 220, 219, 0.5);
+    border-radius: 7px;
+    color: black;
+    font-size: 22px;
+    font-weight: 900;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    pointer-events: none;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+#butn.active {
+    background-color: rgb(176, 176, 176);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#answer {
+    display: none;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
+    margin: 30px 0 0 0;
+    color: rgb(30, 241, 58);
+}
+
+#userWord {
+    color: whitesmoke;
+}
+
+#validationText {
+    display: none;
+    color: red;
+    margin: 10px 0 10px 0;
+}
+
+#validationText.invalidChar {
+    display: block;
+}
+
+@media only screen and (max-width:480px) {
+    p {
+        margin-top: 6px;
+    }
+
+    #mainDiv {
+        margin: 0 10px;
+        border-radius: 17px;
+        padding: 15px;
+    }
+
+    h1 {
+        letter-spacing: 2px;
+        margin: 0;
+        color: white;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 25px;
+    }
+
+    #answer {
+        display: none;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: large;
+    }
+}
