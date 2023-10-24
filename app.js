@@ -22,12 +22,12 @@ function butnOpac() {
 
 function check() {
     if (word.toLowerCase() === word.toLowerCase().split('').reverse().join('')) {
-        answer.innerHTML = `Yes, <span id="userWord">${input.value.trim()}</span> is a palindrome word!`;
+        answer.innerHTML = `Yes, <span id="userWord">${input.value.trim()}</span> is a palindrome!`;
         answer.style.display = 'block';
         input.value = ''
         butn.classList.remove('active');
     } else {
-        answer.innerHTML = `No, <span id="userWord">${input.value.trim()}</span> is not a palindrome word!`;
+        answer.innerHTML = `No, <span id="userWord">${input.value.trim()}</span> is not a palindrome!`;
         answer.style.display = 'block';
         input.value = ''
         butn.classList.remove('active');
